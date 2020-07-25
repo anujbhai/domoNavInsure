@@ -1,0 +1,29 @@
+body,
+html {
+  height: 100%;
+  font-family: "Moderat Trial";
+}
+
+.clearfix {
+  clear: both;
+}
+
+.ni_main_banner {
+  margin-bottom: 0;
+}
+
+.ni_intro_text {
+  background-color: #65C14E;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+.ni_intro_text p {
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 23px;
+}
+.ni_intro_text p strong {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main_styles.css.map */
