@@ -26,4 +26,18 @@ html {
   font-weight: bold;
 }
 
+.ni_info_valid_institutes {
+  background-color: #60C338;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+.ni_info_valid_institutes figure {
+  display: block;
+  text-align: center;
+}
+.ni_info_valid_institutes figure img {
+  width: 100%;
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=main_styles.css.map */
