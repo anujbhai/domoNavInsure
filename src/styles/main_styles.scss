@@ -8,19 +8,78 @@ html {
 	clear: both;
 }
 
+#ni_main_header {
+	padding: 72px 0;
+
+	img {
+		width: 100%;
+		max-width: 350px;
+	}
+}
+
 .ni_main_banner {
+	display: flex;
 	margin-bottom: 0;
+	background-image: url("../images/img_banner.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 35px;
+	min-height: 600px;
+	color: #FFFFFF;
+
+	& > .container,
+	& > .container .row,
+	& > .container .col-sm-7 {
+		display: inherit;
+	}
+
+	& > .container .col-sm-7 {
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	p,
+	h2 {
+		position: relative;
+		z-index: 1;
+	}
+
+	p {
+		font-size: 25px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 74px;
+		margin: 35px 0;
+		font-weight: bold;
+	}
+
+	.banner_gradient_overlay {
+		position: absolute;
+		top: 0; left: 0;
+		z-index: 0;
+		width: 58.33333333%;
+		height: 100%;
+		background: linear-gradient(95deg, rgba(0,0,0,1) 0%, rgba(0,91,129,0) 100%);
+	}
 }
 
 .ni_intro_text {
 	background-color: #65C14E;
-	padding-top: 60px;
-	padding-bottom: 55px;
+	padding-top: 48px;
+	padding-bottom: 48px;
 
 	p {
 		font-weight: 300;
 		color: #FFFFFF;
-		font-size: 23px;
+		font-size: 22px;
+		text-align: center;
+		padding: 12px 0;
 
 		strong {
 			font-weight: bold;
@@ -28,18 +87,203 @@ html {
 	}
 }
 
+.ni_info_provisions {
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+	h3 {
+		font-size: 36px;
+		font-weight: 300;
+		text-align: center;
+		color: #60C338;
+	}
+
+	article {
+		text-align: center;
+		color: #606267;
+		font-size: 18px;
+		margin-top: 75px;
+
+		figure {
+			display: block;
+
+			img {
+				// width: 100%;
+				// max-width: 
+			}
+		}
+
+		h6 {
+			margin-top: 28px;
+			margin-bottom: 18px;
+			font-weight: bold;
+		}
+	}
+}
+
+.ni_info_disclaimer {
+	padding-top: 10px;
+	padding-bottom: 45px;
+
+	p {
+		font-size: 10px;
+		text-align: center;
+		margin: 10px 0;
+	}
+}
+
+.ni_info_purchase {
+	background-color: #606267;
+	padding-top: 58px;
+	padding-bottom: 28px;
+	color: #FFFFFF;
+
+	h3 {
+		font-size: 37px;
+		margin: 20px 0;
+		text-align: center;
+	}
+
+	article {
+
+		p {
+			display: flex;
+			padding: 44px;
+			font-size: 18px;
+			line-height: 22px;
+
+			span {
+				font-size: 94px;
+				line-height: 35px;
+				font-weight: bold;
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
 .ni_info_valid_institutes {
 	background-color: #60C338;
-	padding-top: 60px;
-	padding-bottom: 55px;
+	padding-top: 55px;
+	padding-bottom: 85px;
+
+	h3 {
+		font-size: 36px;
+		font-weight: 300;
+		color: #FFFFFF;
+		text-align: center;
+		padding-bottom: 40px;
+	}
+
+	.ni_info_valid_institutes_container {
+		display: flex;
+		align-items: center;
+	}
 
 	figure {
 		display: block;
 		text-align: center;
+		padding: 25px 0;
 
-		img {
-			width: 100%;
-			max-width: 100%;
+		// img {
+		// 	width: 100%;
+		// 	max-width: 75%;
+		// }
+	}
+}
+
+.ni_info_video {
+	padding-top: 100px;
+	padding-bottom: 150px;
+
+	h3 {
+		font-size: 36px;
+		padding-right: 45px;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 22px;
+		margin: 35px 0;
+		padding-right: 64px;
+	}
+
+	video {
+		width: 100%;
+	}
+
+	button {
+		background: #60C338;
+		font-weight: bold;
+		color: #FFFFFF;
+		padding: 6px 22px;
+	    border-radius: 2px;
+
+	    span {
+	    	font-size: 10px;
+	    }
+	}
+}
+
+.ni_secondary_banner {
+	display: flex;
+	margin-bottom: 0;
+	background-image: url("../images/img_banner2.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 75px;
+	// min-height: 600px;
+	color: #FFFFFF;
+
+	h3,
+	figure {
+		position: relative;
+		z-index: 1;
+	}
+
+	h3 {
+		color: #FFFFFF;
+		padding-bottom: 35px;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	figure {
+		display: block;
+	}
+
+	.banner_gradient_overlay {
+		position: absolute;
+		top: 0; left: 0;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.4);
+	}
+}
+
+#ni_main_footer {
+	background: #555253;
+	padding: 55px 0 65px;
+	color: #FFFFFF;
+
+	ul {
+
+		li {
+			font-size: 15px;
+			line-height: 24px;
+
+			a {
+				color: #FFFFFF;
+				text-decoration: none;
+
+				&:hover {
+					color: #DDDDDD;
+				}
+			}
 		}
 	}
 }
