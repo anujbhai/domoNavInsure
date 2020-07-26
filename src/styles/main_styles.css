@@ -11,9 +11,19 @@ html {
 #ni_main_header {
   padding: 72px 0;
 }
+@media only screen and (max-width: 600px) {
+  #ni_main_header {
+    padding: 30px 0;
+  }
+}
 #ni_main_header img {
   width: 100%;
   max-width: 350px;
+}
+@media only screen and (max-width: 600px) {
+  #ni_main_header img {
+    max-width: 250px;
+  }
 }
 
 .ni_main_banner {
@@ -28,6 +38,13 @@ html {
   padding-bottom: 35px;
   min-height: 600px;
   color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+  .ni_main_banner {
+    padding-top: 35px;
+    min-height: inherit;
+    background-position: top right;
+  }
 }
 .ni_main_banner > .container, .ni_main_banner > .container .row, .ni_main_banner > .container .col-sm-7 {
   display: inherit;
@@ -51,6 +68,11 @@ html {
   margin: 35px 0;
   font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+  .ni_main_banner h2 {
+    font-size: 40px;
+  }
+}
 .ni_main_banner .banner_gradient_overlay {
   position: absolute;
   top: 0;
@@ -59,6 +81,12 @@ html {
   width: 58.33333333%;
   height: 100%;
   background: linear-gradient(95deg, black 0%, rgba(0, 91, 129, 0) 100%);
+}
+@media only screen and (max-width: 600px) {
+  .ni_main_banner .banner_gradient_overlay {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+  }
 }
 
 .ni_intro_text {
@@ -152,6 +180,22 @@ html {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 1024px) {
+  .ni_info_valid_institutes .ni_info_valid_institutes_container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .ni_info_valid_institutes .ni_info_valid_institutes_container .col-sm-3,
+.ni_info_valid_institutes .ni_info_valid_institutes_container .col-sm-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ni_info_valid_institutes .ni_info_valid_institutes_container {
+    display: block;
+  }
+}
 .ni_info_valid_institutes figure {
   display: block;
   text-align: center;
@@ -166,11 +210,21 @@ html {
   font-size: 36px;
   padding-right: 45px;
 }
+@media only screen and (max-width: 600px) {
+  .ni_info_video h3 {
+    padding-right: 0;
+  }
+}
 .ni_info_video p {
   font-size: 18px;
   line-height: 22px;
   margin: 35px 0;
   padding-right: 64px;
+}
+@media only screen and (max-width: 600px) {
+  .ni_info_video p {
+    padding-right: 0;
+  }
 }
 .ni_info_video video {
   width: 100%;
@@ -212,6 +266,13 @@ html {
 .ni_secondary_banner figure {
   display: block;
 }
+@media only screen and (max-width: 1024px) {
+  .ni_secondary_banner figure img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+}
 .ni_secondary_banner .banner_gradient_overlay {
   position: absolute;
   top: 0;
@@ -227,6 +288,27 @@ html {
   padding: 55px 0 65px;
   color: #FFFFFF;
 }
+@media only screen and (max-width: 1024px) {
+  #ni_main_footer {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #ni_main_footer .col-sm-3,
+#ni_main_footer .col-sm-2 {
+    width: 100%;
+  }
+}
+#ni_main_footer h6 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  #ni_main_footer ul {
+    margin: 30px 0;
+  }
+}
 #ni_main_footer ul li {
   font-size: 15px;
   line-height: 24px;
@@ -234,6 +316,7 @@ html {
 #ni_main_footer ul li a {
   color: #FFFFFF;
   text-decoration: none;
+  padding-left: 15px;
 }
 #ni_main_footer ul li a:hover {
   color: #DDDDDD;
