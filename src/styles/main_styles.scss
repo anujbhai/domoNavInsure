@@ -1,3 +1,21 @@
+@mixin responsive($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and ( max-width: 600px ) {
+			@content
+		}
+	}
+	@if $breakpoint == tablet {
+		@media only screen and ( max-width: 1024px ) {
+			@content
+		}
+	}
+	@if $breakpoint == desktop {
+		@media only screen and ( min-width: 1170px ) {
+			@content
+		}
+	}
+}
+
 body,
 html {
 	height: 100%;
@@ -11,9 +29,17 @@ html {
 #ni_main_header {
 	padding: 72px 0;
 
+	@include responsive(phone) {
+		padding: 30px 0;
+	}
+
 	img {
 		width: 100%;
 		max-width: 350px;
+
+		@include responsive(phone) {
+			max-width: 250px;
+		}
 	}
 }
 
@@ -29,6 +55,12 @@ html {
 	padding-bottom: 35px;
 	min-height: 600px;
 	color: #FFFFFF;
+
+	@include responsive(phone) {
+		padding-top: 35px;
+		min-height: inherit;
+		background-position: top right;
+	}
 
 	& > .container,
 	& > .container .row,
@@ -57,6 +89,10 @@ html {
 		font-size: 74px;
 		margin: 35px 0;
 		font-weight: bold;
+
+		@include responsive(phone) {
+			font-size: 40px;
+		}
 	}
 
 	.banner_gradient_overlay {
@@ -66,6 +102,11 @@ html {
 		width: 58.33333333%;
 		height: 100%;
 		background: linear-gradient(95deg, rgba(0,0,0,1) 0%, rgba(0,91,129,0) 100%);
+
+		@include responsive(phone) {
+			background: rgba(0, 0, 0, 0.4);
+			width: 100%;
+		}
 	}
 }
 
@@ -178,6 +219,21 @@ html {
 	.ni_info_valid_institutes_container {
 		display: flex;
 		align-items: center;
+
+		@include responsive(tablet) {
+			flex-direction: column;
+		}
+
+		.col-sm-3,
+		.col-sm-2 {
+			@include responsive(tablet) {
+				width: 100%;
+			}
+		}
+
+		@include responsive(phone) {
+			display: block;
+		}
 	}
 
 	figure {
@@ -199,6 +255,10 @@ html {
 	h3 {
 		font-size: 36px;
 		padding-right: 45px;
+
+		@include responsive(phone) {
+			padding-right: 0;
+		}
 	}
 
 	p {
@@ -206,6 +266,10 @@ html {
 		line-height: 22px;
 		margin: 35px 0;
 		padding-right: 64px;
+
+		@include responsive(phone) {
+			padding-right: 0;
+		}
 	}
 
 	video {
@@ -253,6 +317,15 @@ html {
 
 	figure {
 		display: block;
+
+		img {
+
+			@include responsive(tablet) {
+				width: 100%;
+				max-width: 200px;
+				margin-bottom: 15px;
+			}
+		}
 	}
 
 	.banner_gradient_overlay {
@@ -270,7 +343,28 @@ html {
 	padding: 55px 0 65px;
 	color: #FFFFFF;
 
+	@include responsive(tablet) {
+		text-align: center;
+	}
+
+	.col-sm-3,
+	.col-sm-2 {
+		@include responsive(tablet) {
+			width: 100%;
+		}
+	}
+
+	h6 {
+		font-weight: bold;
+		font-size: 18px;
+		padding-bottom: 5px;
+	}
+
 	ul {
+
+		@include responsive(tablet) {
+			margin: 30px 0;
+		}
 
 		li {
 			font-size: 15px;
@@ -279,6 +373,7 @@ html {
 			a {
 				color: #FFFFFF;
 				text-decoration: none;
+				padding-left: 15px;
 
 				&:hover {
 					color: #DDDDDD;
