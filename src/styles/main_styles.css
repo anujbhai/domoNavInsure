@@ -128,6 +128,7 @@ html {
 }
 .ni_info_provisions article figure {
   display: block;
+  min-height: 87px;
 }
 .ni_info_provisions article h6 {
   margin-top: 28px;
@@ -164,9 +165,10 @@ html {
 }
 .ni_info_purchase article p span {
   font-size: 94px;
-  line-height: 35px;
+  line-height: 56px;
   font-weight: bold;
   margin-right: 15px;
+  min-width: 52px;
 }
 
 .ni_info_valid_institutes {
@@ -310,7 +312,7 @@ html {
 }
 
 #ni_main_footer {
-  background: #555253;
+  background: #5F6062;
   padding: 55px 0 65px;
   color: #FFFFFF;
   border-top: 50px solid #68BD49;

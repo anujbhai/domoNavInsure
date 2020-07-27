@@ -155,6 +155,7 @@ html {
 
 		figure {
 			display: block;
+			min-height: 87px;
 
 			img {
 				// width: 100%;
@@ -203,9 +204,10 @@ html {
 
 			span {
 				font-size: 94px;
-				line-height: 35px;
+				line-height: 56px;
 				font-weight: bold;
 				margin-right: 15px;
+				min-width: 52px;
 			}
 		}
 	}
@@ -361,7 +363,7 @@ html {
 }
 
 #ni_main_footer {
-	background: #555253;
+	background: $grey;
 	padding: 55px 0 65px;
 	color: #FFFFFF;
 	border-top: 50px solid $green;
