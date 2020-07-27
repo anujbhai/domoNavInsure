@@ -275,7 +275,7 @@ html {
 	video {
 		width: 100%;
 
-		@include responsive(phone) {
+		@include responsive(tablet) {
 			margin-top: 15px;
 		}
 	}
