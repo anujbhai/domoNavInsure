@@ -1,22 +1,26 @@
 body,
 html {
   height: 100%;
-  font-family: 'Moderat Trial'; }
+  font-family: "Moderat Trial";
+}
+@media only screen and (max-width: 600px) {
+  body,
+html {
+    line-height: 1.4;
+  }
+}
 
 .clearfix {
-  clear: both; }
+  clear: both;
+}
 
 #ni_main_header {
-  padding: 20px 0; }
-  @media only screen and (max-width: 600px) {
-    #ni_main_header {
-      padding: 30px 0; } }
-  #ni_main_header img {
-    width: 100%;
-    max-width: 160px; }
-    @media only screen and (max-width: 600px) {
-      #ni_main_header img {
-        max-width: 136px; } }
+  padding: 20px 0;
+}
+#ni_main_header img {
+  width: 100%;
+  max-width: 160px;
+}
 
 .ni_main_banner {
   display: flex;
@@ -29,165 +33,238 @@ html {
   padding-top: 0;
   padding-bottom: 35px;
   min-height: 600px;
-  color: #FFFFFF; }
-  @media only screen and (max-width: 600px) {
-    .ni_main_banner {
-      padding-top: 35px;
-      min-height: inherit;
-      background-position: top right; } }
-  .ni_main_banner > .container, .ni_main_banner > .container .row, .ni_main_banner > .container .col-sm-7 {
-    display: inherit; }
-  .ni_main_banner > .container .col-sm-7 {
-    flex-direction: column;
-    justify-content: flex-end; }
-  .ni_main_banner p,
-  .ni_main_banner h2 {
-    position: relative;
-    z-index: 1; }
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+  .ni_main_banner {
+    padding-top: 35px;
+    min-height: inherit;
+    background-position: top right;
+  }
+}
+.ni_main_banner > .container, .ni_main_banner > .container .row, .ni_main_banner > .container .col-sm-7 {
+  display: inherit;
+}
+.ni_main_banner > .container article, .ni_main_banner > .container .row article, .ni_main_banner > .container .col-sm-7 article {
+  padding: 30px;
+}
+.ni_main_banner > .container .col-sm-7 {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.ni_main_banner p,
+.ni_main_banner h2 {
+  position: relative;
+  z-index: 1;
+}
+.ni_main_banner p {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+@media only screen and (max-width: 600px) {
   .ni_main_banner p {
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0; }
+    font-size: 22px;
+  }
+}
+.ni_main_banner h2 {
+  font-size: 74px;
+  margin: 35px 0;
+  font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
   .ni_main_banner h2 {
-    font-size: 74px;
-    margin: 35px 0;
-    font-weight: bold; }
-    @media only screen and (max-width: 600px) {
-      .ni_main_banner h2 {
-        font-size: 40px; } }
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+.ni_main_banner .banner_gradient_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 58.33333333%;
+  height: 100%;
+  background: linear-gradient(95deg, black 0%, rgba(0, 91, 129, 0) 100%);
+}
+@media only screen and (max-width: 600px) {
   .ni_main_banner .banner_gradient_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 58.33333333%;
-    height: 100%;
-    background: linear-gradient(95deg, black 0%, rgba(0, 91, 129, 0) 100%); }
-    @media only screen and (max-width: 600px) {
-      .ni_main_banner .banner_gradient_overlay {
-        background: rgba(0, 0, 0, 0.4);
-        width: 100%; } }
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+  }
+}
 
 .ni_intro_text {
-  background-color: #65C14E;
+  background-color: #68BD49;
   padding-top: 48px;
-  padding-bottom: 48px; }
-  .ni_intro_text p {
-    font-weight: 300;
-    color: #FFFFFF;
-    font-size: 22px;
-    text-align: center;
-    padding: 12px 0; }
-    .ni_intro_text p strong {
-      font-weight: bold; }
+  padding-bottom: 48px;
+}
+.ni_intro_text p {
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 22px;
+  text-align: center;
+  padding: 12px 0;
+}
+.ni_intro_text p strong {
+  font-weight: bold;
+}
 
 .ni_info_provisions {
   padding-top: 70px;
-  padding-bottom: 70px; }
-  .ni_info_provisions h3 {
-    font-size: 36px;
-    font-weight: 300;
-    text-align: center;
-    color: #60C338; }
-  .ni_info_provisions article {
-    text-align: center;
-    color: #606267;
-    font-size: 18px;
-    margin-top: 75px; }
-    .ni_info_provisions article figure {
-      display: block; }
-    .ni_info_provisions article h6 {
-      margin-top: 28px;
-      margin-bottom: 18px;
-      font-weight: bold; }
+  padding-bottom: 70px;
+}
+.ni_info_provisions h3 {
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  color: #68BD49;
+}
+.ni_info_provisions article {
+  text-align: center;
+  color: #606267;
+  font-size: 18px;
+  margin-top: 75px;
+}
+.ni_info_provisions article figure {
+  display: block;
+}
+.ni_info_provisions article h6 {
+  margin-top: 28px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
 
 .ni_info_disclaimer {
   padding-top: 10px;
-  padding-bottom: 45px; }
-  .ni_info_disclaimer p {
-    font-size: 10px;
-    text-align: center;
-    margin: 10px 0; }
+  padding-bottom: 45px;
+}
+.ni_info_disclaimer p {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+}
 
 .ni_info_purchase {
-  background-color: #606267;
+  background-color: #5F6062;
   padding-top: 58px;
   padding-bottom: 28px;
-  color: #FFFFFF; }
-  .ni_info_purchase h3 {
-    font-size: 37px;
-    margin: 20px 0;
-    text-align: center; }
-  .ni_info_purchase article p {
-    display: flex;
-    padding: 44px;
-    font-size: 18px;
-    line-height: 22px; }
-    .ni_info_purchase article p span {
-      font-size: 94px;
-      line-height: 35px;
-      font-weight: bold;
-      margin-right: 15px; }
+  color: #FFFFFF;
+}
+.ni_info_purchase h3 {
+  font-size: 37px;
+  margin: 20px 0;
+  text-align: center;
+}
+.ni_info_purchase article p {
+  display: flex;
+  padding: 44px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.ni_info_purchase article p span {
+  font-size: 94px;
+  line-height: 35px;
+  font-weight: bold;
+  margin-right: 15px;
+}
 
 .ni_info_valid_institutes {
-  background-color: #60C338;
+  background-color: #68BD49;
   padding-top: 55px;
-  padding-bottom: 85px; }
-  .ni_info_valid_institutes h3 {
-    font-size: 36px;
-    font-weight: 300;
-    color: #FFFFFF;
-    text-align: center;
-    padding-bottom: 40px; }
+  padding-bottom: 85px;
+}
+.ni_info_valid_institutes h3 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.ni_info_valid_institutes .ni_info_valid_institutes_container {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
   .ni_info_valid_institutes .ni_info_valid_institutes_container {
-    display: flex;
-    align-items: center; }
-    @media only screen and (max-width: 1024px) {
-      .ni_info_valid_institutes .ni_info_valid_institutes_container {
-        flex-direction: column; } }
-    @media only screen and (max-width: 1024px) {
-      .ni_info_valid_institutes .ni_info_valid_institutes_container .col-sm-3,
-      .ni_info_valid_institutes .ni_info_valid_institutes_container .col-sm-2 {
-        width: 100%; } }
-    @media only screen and (max-width: 600px) {
-      .ni_info_valid_institutes .ni_info_valid_institutes_container {
-        display: block; } }
-  .ni_info_valid_institutes figure {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .ni_info_valid_institutes .ni_info_valid_institutes_container .col-sm-3,
+.ni_info_valid_institutes .ni_info_valid_institutes_container .col-sm-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ni_info_valid_institutes .ni_info_valid_institutes_container {
     display: block;
-    text-align: center;
-    padding: 25px 0; }
+  }
+}
+.ni_info_valid_institutes figure {
+  display: block;
+  text-align: center;
+  padding: 25px 0;
+}
+.ni_info_valid_institutes figure img {
+  max-width: 260px;
+}
+@media only screen and (max-width: 1024px) {
+  .ni_info_valid_institutes figure img {
+    max-width: 260px;
+  }
+}
 
 .ni_info_video {
   padding-top: 100px;
-  padding-bottom: 150px; }
+  padding-bottom: 150px;
+}
+@media only screen and (max-width: 600px) {
+  .ni_info_video {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+}
+.ni_info_video h3 {
+  font-size: 36px;
+  padding-right: 45px;
+}
+@media only screen and (max-width: 600px) {
   .ni_info_video h3 {
-    font-size: 36px;
-    padding-right: 45px; }
-    @media only screen and (max-width: 600px) {
-      .ni_info_video h3 {
-        padding-right: 0; } }
+    padding-right: 0;
+  }
+}
+.ni_info_video p {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 35px 0;
+  padding-right: 64px;
+}
+@media only screen and (max-width: 600px) {
   .ni_info_video p {
-    font-size: 18px;
-    line-height: 22px;
-    margin: 35px 0;
-    padding-right: 64px; }
-    @media only screen and (max-width: 600px) {
-      .ni_info_video p {
-        padding-right: 0; } }
+    padding-right: 0;
+    line-height: 1.6;
+  }
+}
+.ni_info_video video {
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
   .ni_info_video video {
-    width: 100%; }
-    @media only screen and (max-width: 600px) {
-      .ni_info_video video {
-        margin-top: 15px; } }
-  .ni_info_video button {
-    background: #60C338;
-    font-weight: bold;
-    color: #FFFFFF;
-    padding: 6px 22px;
-    border-radius: 2px; }
-    .ni_info_video button span {
-      font-size: 10px;
-      margin-left: 5px; }
+    margin-top: 15px;
+  }
+}
+.ni_info_video button {
+  background: #68BD49;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 6px 22px;
+  border-radius: 2px;
+}
+.ni_info_video button span {
+  font-size: 10px;
+  margin-left: 5px;
+}
 
 .ni_secondary_banner {
   display: flex;
@@ -199,59 +276,77 @@ html {
   position: relative;
   padding-top: 100px;
   padding-bottom: 75px;
-  color: #FFFFFF; }
-  .ni_secondary_banner h3,
-  .ni_secondary_banner figure {
-    position: relative;
-    z-index: 1; }
-  .ni_secondary_banner h3 {
-    color: #FFFFFF;
-    padding-bottom: 35px;
-    font-size: 36px;
-    text-align: center; }
-  .ni_secondary_banner figure {
-    display: block; }
-    @media only screen and (max-width: 1024px) {
-      .ni_secondary_banner figure img {
-        width: 100%;
-        max-width: 200px;
-        margin-bottom: 15px; } }
-  .ni_secondary_banner .banner_gradient_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+  color: #FFFFFF;
+}
+.ni_secondary_banner h3,
+.ni_secondary_banner figure {
+  position: relative;
+  z-index: 1;
+}
+.ni_secondary_banner h3 {
+  color: #FFFFFF;
+  padding-bottom: 35px;
+  font-size: 36px;
+  text-align: center;
+}
+.ni_secondary_banner figure {
+  display: block;
+}
+@media only screen and (max-width: 1024px) {
+  .ni_secondary_banner figure img {
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); }
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+}
+.ni_secondary_banner .banner_gradient_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
 
 #ni_main_footer {
   background: #555253;
   padding: 55px 0 65px;
   color: #FFFFFF;
-  border-top: 50px solid #60C338; }
-  @media only screen and (max-width: 1024px) {
-    #ni_main_footer {
-      text-align: center; } }
-  @media only screen and (max-width: 1024px) {
-    #ni_main_footer .col-sm-3,
-    #ni_main_footer .col-sm-2 {
-      width: 100%; } }
-  #ni_main_footer h6 {
-    font-weight: bold;
-    font-size: 18px;
-    padding-bottom: 5px; }
-  @media only screen and (max-width: 1024px) {
-    #ni_main_footer ul {
-      margin: 30px 0; } }
-  #ni_main_footer ul li {
-    font-size: 15px;
-    line-height: 24px; }
-    #ni_main_footer ul li a {
-      color: #FFFFFF;
-      text-decoration: none;
-      padding-left: 15px; }
-      #ni_main_footer ul li a:hover {
-        color: #DDDDDD; }
+  border-top: 50px solid #68BD49;
+}
+@media only screen and (max-width: 1024px) {
+  #ni_main_footer {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #ni_main_footer .col-sm-3,
+#ni_main_footer .col-sm-2 {
+    width: 100%;
+  }
+}
+#ni_main_footer h6 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  #ni_main_footer ul {
+    margin: 30px 0;
+  }
+}
+#ni_main_footer ul li {
+  font-size: 16px;
+  line-height: 24px;
+}
+#ni_main_footer ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 15px;
+}
+#ni_main_footer ul li a:hover {
+  color: #DDDDDD;
+}
 
 /*# sourceMappingURL=main_styles.css.map */
